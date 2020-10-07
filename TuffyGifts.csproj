@@ -1,0 +1,825 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31AAF03F-0668-4636-A5BB-4E3CD595E5F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TuffyGifts</RootNamespace>
+    <AssemblyName>TuffyGifts</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllDay.Designer.cs">
+      <DependentUpon>AllDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnniCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnniCards.Designer.cs">
+      <DependentUpon>AnniCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnniGifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnniGifts.Designer.cs">
+      <DependentUpon>AnniGifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnniOcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnniOcc.Designer.cs">
+      <DependentUpon>AnniOcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnniWrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnniWrap.Designer.cs">
+      <DependentUpon>AnniWrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bath.Designer.cs">
+      <DependentUpon>Bath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BD Cards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BD Cards.Designer.cs">
+      <DependentUpon>BD Cards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BD Gifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BD Gifts.Designer.cs">
+      <DependentUpon>BD Gifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDOcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDOcc.Designer.cs">
+      <DependentUpon>BDOcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDWrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDWrap.Designer.cs">
+      <DependentUpon>BDWrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Black.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Black.Designer.cs">
+      <DependentUpon>Black.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box.Designer.cs">
+      <DependentUpon>Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat.Designer.cs">
+      <DependentUpon>Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confetti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confetti.Designer.cs">
+      <DependentUpon>Confetti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRestock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestock.Designer.cs">
+      <DependentUpon>frmRestock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCart.Designer.cs">
+      <DependentUpon>FrmCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBear.Designer.cs">
+      <DependentUpon>frmBear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBravo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBravo.Designer.cs">
+      <DependentUpon>frmBravo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCap.Designer.cs">
+      <DependentUpon>frmCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCards.Designer.cs">
+      <DependentUpon>frmCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckOut.Designer.cs">
+      <DependentUpon>FrmCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCongrat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCongrat.Designer.cs">
+      <DependentUpon>frmCongrat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrap.Designer.cs">
+      <DependentUpon>frmCrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateAccount.Designer.cs">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFrame.Designer.cs">
+      <DependentUpon>frmFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFrameB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFrameB.Designer.cs">
+      <DependentUpon>frmFrameB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGBox.Designer.cs">
+      <DependentUpon>frmGBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGifts.Designer.cs">
+      <DependentUpon>frmGifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGlass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGlass.Designer.cs">
+      <DependentUpon>frmGlass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGolden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGolden.Designer.cs">
+      <DependentUpon>frmGolden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuestFill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuestFill.Designer.cs">
+      <DependentUpon>FrmGuestFill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHand.Designer.cs">
+      <DependentUpon>frmHand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHats.Designer.cs">
+      <DependentUpon>frmHats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKey.Designer.cs">
+      <DependentUpon>frmKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLove.Designer.cs">
+      <DependentUpon>frmLove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMint.Designer.cs">
+      <DependentUpon>frmMint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMug.Designer.cs">
+      <DependentUpon>frmMug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNeck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNeck.Designer.cs">
+      <DependentUpon>frmNeck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOccasions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOccasions.Designer.cs">
+      <DependentUpon>frmOccasions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrderComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrderComplete.Designer.cs">
+      <DependentUpon>FrmOrderComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPaymentMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPaymentMethod.Designer.cs">
+      <DependentUpon>FrmPaymentMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultForm.Designer.cs">
+      <DependentUpon>frmResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRustic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRustic.Designer.cs">
+      <DependentUpon>frmRustic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSakura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSakura.Designer.cs">
+      <DependentUpon>frmSakura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManager.Designer.cs">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignIn.Designer.cs">
+      <DependentUpon>frmSignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSignInCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSignInCheckOut.Designer.cs">
+      <DependentUpon>frmSignInCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSilver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSilver.Designer.cs">
+      <DependentUpon>frmSilver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmV.Designer.cs">
+      <DependentUpon>frmV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWhite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWhite.Designer.cs">
+      <DependentUpon>frmWhite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWine.Designer.cs">
+      <DependentUpon>frmWine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWrap.Designer.cs">
+      <DependentUpon>frmWrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYay.Designer.cs">
+      <DependentUpon>frmYay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradCards.Designer.cs">
+      <DependentUpon>GradCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradGifts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradGifts.Designer.cs">
+      <DependentUpon>GradGifts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradOcc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradOcc.Designer.cs">
+      <DependentUpon>GradOcc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradWrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradWrap.Designer.cs">
+      <DependentUpon>GradWrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guy.Designer.cs">
+      <DependentUpon>Guy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Happy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Happy.Designer.cs">
+      <DependentUpon>Happy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lego.Designer.cs">
+      <DependentUpon>Lego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Picture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Picture.Designer.cs">
+      <DependentUpon>Picture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pink.Designer.cs">
+      <DependentUpon>Pink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllDay.resx">
+      <DependentUpon>AllDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnniCards.resx">
+      <DependentUpon>AnniCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnniGifts.resx">
+      <DependentUpon>AnniGifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnniOcc.resx">
+      <DependentUpon>AnniOcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnniWrap.resx">
+      <DependentUpon>AnniWrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bath.resx">
+      <DependentUpon>Bath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BD Cards.resx">
+      <DependentUpon>BD Cards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BD Gifts.resx">
+      <DependentUpon>BD Gifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDOcc.resx">
+      <DependentUpon>BDOcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDWrap.resx">
+      <DependentUpon>BDWrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Black.resx">
+      <DependentUpon>Black.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box.resx">
+      <DependentUpon>Box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat.resx">
+      <DependentUpon>Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confetti.resx">
+      <DependentUpon>Confetti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRestock.resx">
+      <DependentUpon>frmRestock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCart.resx">
+      <DependentUpon>FrmCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBear.resx">
+      <DependentUpon>frmBear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBravo.resx">
+      <DependentUpon>frmBravo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCap.resx">
+      <DependentUpon>frmCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCards.resx">
+      <DependentUpon>frmCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckOut.resx">
+      <DependentUpon>FrmCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCongrat.resx">
+      <DependentUpon>frmCongrat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrap.resx">
+      <DependentUpon>frmCrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateAccount.resx">
+      <DependentUpon>frmCreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFrame.resx">
+      <DependentUpon>frmFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFrameB.resx">
+      <DependentUpon>frmFrameB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGBox.resx">
+      <DependentUpon>frmGBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGifts.resx">
+      <DependentUpon>frmGifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGlass.resx">
+      <DependentUpon>frmGlass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGolden.resx">
+      <DependentUpon>frmGolden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuestFill.resx">
+      <DependentUpon>FrmGuestFill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHand.resx">
+      <DependentUpon>frmHand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHats.resx">
+      <DependentUpon>frmHats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKey.resx">
+      <DependentUpon>frmKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLove.resx">
+      <DependentUpon>frmLove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManager.resx">
+      <DependentUpon>frmManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMint.resx">
+      <DependentUpon>frmMint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMug.resx">
+      <DependentUpon>frmMug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNeck.resx">
+      <DependentUpon>frmNeck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOccasions.resx">
+      <DependentUpon>frmOccasions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrderComplete.resx">
+      <DependentUpon>FrmOrderComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPaymentMethod.resx">
+      <DependentUpon>FrmPaymentMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultForm.resx">
+      <DependentUpon>frmResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRustic.resx">
+      <DependentUpon>frmRustic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSakura.resx">
+      <DependentUpon>frmSakura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignIn.resx">
+      <DependentUpon>frmSignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSignInCheckOut.resx">
+      <DependentUpon>frmSignInCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSilver.resx">
+      <DependentUpon>frmSilver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmV.resx">
+      <DependentUpon>frmV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWhite.resx">
+      <DependentUpon>frmWhite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWine.resx">
+      <DependentUpon>frmWine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWrap.resx">
+      <DependentUpon>frmWrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYay.resx">
+      <DependentUpon>frmYay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradCards.resx">
+      <DependentUpon>GradCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradGifts.resx">
+      <DependentUpon>GradGifts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradOcc.resx">
+      <DependentUpon>GradOcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradWrap.resx">
+      <DependentUpon>GradWrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guy.resx">
+      <DependentUpon>Guy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Happy.resx">
+      <DependentUpon>Happy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lego.resx">
+      <DependentUpon>Lego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picture.resx">
+      <DependentUpon>Picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pink.resx">
+      <DependentUpon>Pink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\promo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\give.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifts.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minions.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bath.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painting1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cup.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\neck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loveframe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdc2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thanks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\annicard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovecard.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\annicard.jpg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bdbag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giftbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\allday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\congratz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradwrap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovebag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lovebox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\painting2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\member.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Congratulations_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\inventory.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
